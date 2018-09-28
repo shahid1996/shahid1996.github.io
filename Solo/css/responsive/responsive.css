@@ -1,0 +1,424 @@
+/*##############################
+        Mobile Menu
+##############################*/
+.navbar-header{
+    position: relative;
+    }
+#mobile-nav-open-btn {
+    font-size: 30px;
+    color: #f4c613;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 6px;
+/*display none */
+    display: none;
+    }
+#mobile-nav {
+/* By default height of mobile menu is hidden */
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(255,255,255,0.9);
+    transition: all 300ms linear;
+    overflow: hidden;
+}
+#mobile-nav-close-btn {
+    font-family: "Raleway", sans-serif;
+    font-size: 70px;
+    color: #212226;
+    font-weight: 400;
+    cursor: pointer;
+    position: absolute;
+    top: -9px;
+    right: 13px;
+    transition: .3s;
+}
+#mobile-nav-content {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    top: 10%;
+}
+#mobile-nav ul li {
+    margin-bottom: 20px;
+}
+#mobile-nav a {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    color: #212226;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline;
+    transition: .3s;
+}
+#mobile-nav a:hover,
+#mobile-nav a:focus,
+#mobile-nav-close-btn:hover,
+#mobile-nav-close-btn:focus {
+    color: #f4c613;
+    background: none;
+}
+/* Mobile nav spy scroll effect */
+
+.white-nav-top #mobile-nav ul.nav > li.active > a {
+    color: #f4c613;
+    font-weight: 500;
+}
+
+/*Bootstrap media queries*/
+/*Large devices(Desktops & Laptops)*/
+@media (min-width:1200px) and (max-width:1299px) {
+/* Navigation */
+    .site-nav-wrapper {
+        padding: 0 20px;
+    }
+}
+/*Medium devices (Landscape tablets & medium desktops)*/
+@media (min-width:992px) and (max-width:1199px) {
+    /* Navigation */
+    .site-nav-wrapper {
+        padding: 0 20px;
+    }
+/* Generic */
+    .vertical-heading h2 {
+        font-size: 29px;
+    }
+/* Services 02 */
+    #service-tabs .tab-bg {
+        padding: 16px 30px;
+        min-height: 300px;
+    }
+    .service-tab p {
+        line-height: 20px;
+    }
+}
+/*small devices (portrait tablets & small desktops)*/
+@media (min-width:768px) and (max-width:991px) {
+    /* Navigation */
+    .site-nav-wrapper {
+        padding: 0;
+    }
+    #home-heading h1 {
+        font-size: 41px;
+    }
+    #home-text p {
+        font-size: 13px;
+    }
+/*  generic */
+    .btn-general {
+        padding: 8px 35px 8px 35px;
+        font-size: 10px;
+    }
+    /* Generic */
+    .vertical-heading h2 {
+        font-size: 29px;
+    }
+    #tech-statement h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+/*    service 02 */
+    .r-tabs-accordion-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .r-tabs-accordion-title a {
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+    color: #212226;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 0;
+    text-decoration: none;
+    }
+/*    active tab */
+    .r-tabs-accordion-title.r-tabs-state-active a {
+    color: #f4c613;
+    font-weight: 700;
+    border-bottom: 3px solid #f4c613;
+    padding-bottom: 5px;
+    transition: border-color 300ms linear; 
+    }
+/*    pricing */
+    .pricing-table .price h2{
+        margin: 0 0 0 6px;
+        font-size: 35px;
+    }
+/*    stats */
+    .stats-item p {
+        line-height: 18px;
+    }
+/*    Blog */
+    .blog-post .post-meta p {
+        line-height: 12px;
+    } 
+/*    contact */
+    ul.office-details li {
+        margin-right: 15px;
+    }
+    ul.office-details li i {
+        width: 25px;
+        
+    }
+}
+/*Extra small devices (landscape phones & portrait tablets)*/
+@media (max-width:767px) {
+/*  Navigation */
+    .navbar {
+        padding: 20px 0;
+    }
+    .site-nav-wrapper, .white-nav-top {
+        padding: 0;
+    }
+/* show mobile nav open button */
+    #mobile-nav-open-btn {
+        display: block;
+    }
+    #home-heading h1 {
+        font-size: 35px;
+    }
+    #home-text p {
+        font-size: 13px;
+        line-height: 18px;
+    }
+/*  generic */
+    .btn-general {
+        padding: 8px 25px 6px 25px;
+        font-size: 10px;
+    }
+/* About 01 */
+/* Large Content Box */
+    .content-box-lg {
+    padding: 90px 0;
+}
+/*Vertical Heading*/
+    .vertical-heading {
+        text-align: center;
+    }
+    .vertical-heading h5 {
+        transform: rotate(0deg);
+        display: block;
+        position: static;
+        margin-bottom: 15px;
+    }
+    .vertical-heading h2 {
+        font-size: 25px;
+        line-height: normal;
+        margin: 0;
+    }
+    #about-left {
+        margin-bottom: 50px;
+    }
+    #about-right {
+        text-align: center;
+    }
+/*About 02*/
+/* medium content box */
+    .content-box-md {
+        padding: 80px 0;
+    }
+    .about-item {
+        padding: 55px 30px;
+        margin-bottom: 35px;
+    }
+    .about-item i {
+        font-size: 30px;
+    }
+    .about-item h3 {
+        font-size: 18px;
+    }
+/*  Team */
+    #team-left .vertical-heading {
+        min-height: 130px;
+    }
+    .skill h4 {
+        font-size: 14px;
+        line-height: 34px;
+    }
+    #tech-statement h3 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+/*  Services 01  */
+/* Horizontal Heading */
+    .horizontal-heading {
+        margin-bottom: 40px;
+    }
+    .horizontal-heading h2 {
+        font-size: 30px;
+    }
+    #services-01 img {
+        margin: 35px 0;
+    }
+    .service, .service .icon {
+        text-align: center;
+    }
+    .service h4 {
+        font-size: 18px;
+    }
+    /*    service 02 */
+    .r-tabs-accordion-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .r-tabs-accordion-title a {
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+    color: #212226;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 0;
+    text-decoration: none;
+    }
+/*    active tab */
+    .r-tabs-accordion-title.r-tabs-state-active a {
+    color: #f4c613;
+    font-weight: 700;
+    border-bottom: 3px solid #f4c613;
+    padding-bottom: 5px;
+    transition: border-color 300ms linear; 
+    }
+    #services-tab .tab-bg {
+        text-align: center;
+        padding: 40px 30px;
+    }
+    #services-tab h2 {
+        font-size: 40px;
+    }
+    #services-tab h3 {
+        font-size: 28px;
+    }
+/*  Portfolio */
+    #portfolio {
+        padding-bottom: 0;
+    }
+    #isotope-filters button {
+        padding-right: 15px;
+    }
+/* Testimonial */
+    #testimonials {
+        padding-top: 45px;
+    }
+    #testimonial-slider {
+        top: 0;
+    }
+    #testimonials .vertical-heading {
+        padding: 0;
+    }
+    .testimonial .row {
+        margin: 0;
+    }
+    .testimonial h3 {
+        font-size: 20px;
+    }
+    .testimonial .stars {
+        font-size: 16px;
+    }
+    .author img {
+        width: 80px !important;
+    }
+/* Pricing */
+    .pricing-table {
+        margin-bottom: 30px;
+    }
+    .pricing-table .price h2 {
+        font-size: 28px;
+        margin: 0 0 0 16px;
+    }
+/* Stats */
+    .stats-item {
+        margin-bottom: 20px;
+        padding: 25px 5px;
+    }
+    .stats-item i {
+        font-size: 30px;
+    }
+    .stats-item h3 {
+        font-size: 24px;
+    }
+/* Blog */
+    #blog-left {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .blog-post {
+        margin-bottom: 25px;
+    }
+/*Contact*/
+    #contact-left {
+        text-align: center;
+    }
+    .office {
+        margin-bottom: 40px;
+    }
+    ul.office-details li{
+        display: block;
+        margin-bottom: 25px;
+    }
+    ul.office-details li i {
+        width: auto;
+        display: block;
+        margin-bottom: 3px;
+    }
+    ul.social-list {
+        margin-bottom: 40px;
+    }
+}
+/*Extra small devices (Portrait phones & small devices)*/
+@media (max-width:480px) {
+    #home-heading h1 {
+        font-size: 18px;
+    }
+    #home-text p {
+        font-size: 11px;
+        line-height: 16px;
+    }
+/*   Generic */
+    .vertical-heading h2 {
+        font-size: 22px;
+    }
+/* Portfolio */
+    #isotope-filters {
+        text-align: center;
+    }
+    #isotope-filters button {
+        font-size: 10px;
+        margin-right: 14px;
+    }
+/* Testimonial */
+    .testimonial h3 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .testimonial .stars {
+        font-size: 13px;
+    }
+}
+/*Extra small devices (Portrait phones & small devices)*/
+@media (max-width:320px) {
+    /* Testimonial */
+    .testimonial h3 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .testimonial .stars {
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
